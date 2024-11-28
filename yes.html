@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="Max0"></p>
+    <script>
+        const book = {
+            title: "Idea",
+            author: "Voi",
+            genre: "Money",
+            page: 450,
+            IsAviable: true,
+        }
+        // Method to display book details
+        function displayBookDetails() {
+            const bookDetailsElement = document.getElementById('Max0');
+            bookDetailsElement.innerHTML = `
+                <strong>Title:</strong> ${book.title}<br>
+                <strong>Author:</strong> ${book.author}<br>
+                <strong>Genre:</strong> ${book.genre}<br>
+                <strong>Pages:</strong> ${book.page}<br>
+                <strong>Available:</strong> ${book.isAvailable ? 'Yes' : 'No'}
+            `;
+        }
+
+        // Call the function to display book details on page load
+        displayBookDetails();
+    </script>
+</body>
+
+</html>

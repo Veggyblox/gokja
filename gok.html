@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <p id="Max0"></p>
+
+    <script>
+
+        const book = {
+
+            title: "Norwegin Wood",
+
+            author: "Haruki Murakami",
+
+            genre: "fiction",
+
+            page: 296,
+
+            isAvailable: true,
+
+
+            //method to display book details
+
+            getDetails: function () {
+
+                return '${this.title} by ${this.author}';
+
+            }
+
+        };
+
+        //access obejct
+
+        document.write(book.getDetails());
+
+        document.write(book.genre);
+
+        var value = Math.abs(34.56);
+
+        document.write(value);
+
+        document.write("<br>");
+
+        //trigonometry
+
+        var value2 = Math.acos(-1);
+
+        document.write(value2);
+
+        document.write("<br>");
+
+        var value3 = Math.asin(1);
+
+        document.write(value3);
+
+        document.write("<br>");
+
+        var a = Math.sqrt(16);
+
+        document.write(a);
+
+        document.write("<br>");
+
+        // exponential or power using math
+
+        const x = 3; //base value
+
+        const n = 2; //power value
+
+        const p = Math.pow(x, n);
+
+        document.write("<br>");
+
+        document.write(Math.max(5, 2, 11, 40));
+
+        document.write("<br>");
+
+        document.write(Math.min(5, 2, 11, 40));
+
+    </script>
+
+</body>
+
+</html>
